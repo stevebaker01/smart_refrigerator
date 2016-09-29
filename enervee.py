@@ -135,7 +135,7 @@ when the pointer moving by two reaches the last element the pointer moving
 by one will reach the center.
 
 The later will be more efficient as only as many computations are as
-elements are needed. The former will reqire 50% more computations (counts).
+elements are needed. The former will require 50% more computations (counts).
 """
 
 """
@@ -199,6 +199,6 @@ special syntax to tell the framework how to assemble the dom for the view.
 So basically a single template is a file containing instructions html, css,
 and/or javascript on how to render the desired "view" of the apps data model
 (described in code elsewhere in the farmework). The framework generally
-includes special syntax and conventions for proceeduralizing the construction
-of the view's document object model to accomodte the data model.
+includes special syntax and conventions for proceduralizing the construction
+of the view's document object model to accommodate the data model.
 """
