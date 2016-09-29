@@ -112,7 +112,7 @@ class Zebra(Quadruped):
         print('<contact publicist>')
 
 
-class Snake():
+class Snake(Animal):
 
     pass
 
@@ -153,12 +153,12 @@ https://github.com/stevebaker01/steves-utilities/blob/master/steves_utilities/pr
 7. What is the difference between a process and a thread? What are some
 advantages and disadvantages of each?
 
-In the broadest sense a process is a task. Processes can be broken into
-sub-tasks called threads. Threads can then perform multiple subprocesses
-generally concurrently in service of the overall process.
+In the broadest sense a process is a programatic task. Processes can often be
+broken into sub-tasks called threads which can be understood as smaller parts
+of the overall process that can be run separately and usually concurrntly.
 
 Threaded programming is threcherous in any language as concurrency and race
-conditions can present programatic and archetectural chalenges but they can
+conditions can present programmatic and architectural challenges but they can
 dramatically reduce the time it takes to execute many processes or large
 processes. "concurrent" is a new standard library in python 3 which can really
 help when writting threaded processes and the new exception flow in Python 3
@@ -171,7 +171,8 @@ python 2.7 at least, but of course not the exception flow :-/
 operator?
 
 "==" tests equality (is one value equal to another)
-"is" tests identity (is one object the same object as one the other side of "is"
+"is" tests identity (is one object the same object as the one on the other
+    side of the "is")
 """
 
 """
@@ -180,10 +181,10 @@ operator?
 A module is a python file containing a discrete unit of functionality. Python
 classes and functions that can be imported by other python code to perform
 a set of processes needed by the including program.
-Modules are distributed in packages which contain one or more modules.
+Modules are often distributed in packages which contain one or more module.
 Modules are esentually modular, portable functionality.
-Larger python programs will generally contain many of their own modules which
-offer a natuaral way to separate functionality.
+Larger python programs will often generally contain many of their own modules
+which offer a natuaral way to separate functionality.
 """
 
 """
@@ -195,4 +196,9 @@ They basicaly allow the (data) model for the application be expressed
 (rendered) in the client as the "view", usually in a browser. Most templating
 systems allow for html, css, and java coding as usual for web apps but with
 special syntax to tell the framework how to assemble the dom for the view.
+So basically a single template is a file containing instructions html, css,
+and/or javascript on how to render the desired "view" of the apps data model
+(described in code elsewhere in the farmework). The framework generally
+includes special syntax and conventions for proceeduralizing the construction
+of the view's document object model to accomodte the data model.
 """
